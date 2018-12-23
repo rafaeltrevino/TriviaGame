@@ -41,7 +41,7 @@ function intro() {
     }, 2000);
 
     setTimeout(function() {
-        var line1 = "Every two years, the <strong>National Science Foundation</strong> polls Americans to see how the U.S. is doing in science and engineering.";
+        var line1 = "According to <a href=\"https://www.businessinsider.com/science-questions-quiz-public-knowledge-education-2018-5\">Business Insider</a>, the <strong>National Science Foundation</strong> polls Americans every two years to see how the U.S. is doing in science and engineering.";
         var d = $("<div>");
         d.addClass("uk-width-1-3@s uk-align-center uk-animation-slide-right");
         d.attr("id", "intro");
