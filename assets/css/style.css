@@ -1,0 +1,33 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+img {
+    height: 150px;
+    margin: 30px;
+}
+
+.info {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.answer {
+    font-size: 18px;
+
+}
+
+.explanation, .stats {
+    font-size: 18px;
+}
+
+.timer {
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+#citation {
+    font-size: 10px;
+    text-align: justify;
+}
