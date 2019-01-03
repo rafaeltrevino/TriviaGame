@@ -14,20 +14,20 @@ function Item(question, answer, explanation) {
     this.explanation = explanation;
 }
 
-var item1 = new Item("The center of the Earth is very hot.", true, "Scientists estimate that Earth's core is more than 10,000 degrees Fahrenheit — nearly the temperature found on the surface of the Sun.");
-var item2 = new Item("The continents have been moving their location for millions of years and will continue to move.", true, "Plate tectonics is the science of how continent-size slabs of crust form Earth's outermost layer and constantly move and regenerate. Most move less than a couple inches per year, according to Pacific Northwest Seismic Network, though the process may be essential to making a rocky planet habitable to life.");
-var item3 = new Item("The Sun goes around the Earth.", false, "We know this is true on a basic level because we can see the position of the stars change over time. The space age has also required us to intimately understand this fact — and acknowledge our puny existence in the cosmos viastunning pictures of Earth from afar.");
-var item4 = new Item("All radioactivity is man-made.", false, "Natural radiation is everywhere, especially in space. Small amounts are present in soil, water, and vegetation. Even a portion of the potassium found in bananas is radioactive.");
-var item5 = new Item("Electrons are smaller than atoms.", true, "Electrons are much less massive than the protons and neutrons that make up the cores of atoms.");
-var item6 = new Item("Lasers work by focusing sound waves.", false, "Lasers concentrate light waves, not sound waves.");
-var item7 = new Item("The universe began with a huge explosion.", true, "This is the best theory that we have as to how the universe began: a point of infinite density at the beginning of the universe began to expand and created the galaxies, planets, and stars that we see — still in motion — today. People call this \"the Big Bang.\"");
-var item8 = new Item("It is the father's gene that decides whether the baby is a boy or girl.", true, "Sex is determined by two chromosomes, and sperm carries one of them: either an X (female) chromosome or a Y (male) chromosome. Whichever sperm makes it to the egg first to join an X chromosome in the mother's egg determines the baby's sex. (XX is a girl and XY is a boy, anatomically speaking.)");
-var item9 = new Item("Antibiotics kill viruses as well as bacteria.", false, "Antibiotics only kill bacteria, not viruses.");
-var item10 = new Item("Human beings, as we know them today, developed from earlier species of animals.", true, "Fossils in the ground, genetic studies, and other research over the past century has shown again and again that evolution not only gave rise to species like humans, but will continue to shape the forms of our descendants.");
+var item1 = new Item("The center of the Earth is very hot.", true, "According to <a href=\"https://www.scientificamerican.com/article/why-is-the-earths-core-so/\">Scientific American</a>: \“There are three main sources of heat in the deep earth: (1) heat from when the planet formed and accreted, which has not yet been lost; (2) frictional heating, caused by denser core material sinking to the center of the planet; and (3) heat from the decay of radioactive elements.\”");
+var item2 = new Item("The continents have been moving their location for millions of years and will continue to move.", true, "According to a report by <a href=\"https://learningenglish.voanews.com/a/earths-continents-and-ocean-floors-are-always-moving/1886773.html\">VOA</a>, \“Scientists found that the surface of our planet is always in motion. Continents move about the Earth like huge ships at sea, floating on pieces of the Earth’s outer skin, or crust. New crust is created as melted rock pushes up from inside the planet. Old crust is destroyed as it moves toward the hot rock and melts.\”");
+var item3 = new Item("The Sun goes around the Earth.", false, "The website <a href=\"https://sciencing.com/earth-rotates-around-sun-8501366.html\">Sciencing</a> states that, \“The Earth actually revolves around, or orbits, the sun. One revolution around the sun takes the Earth about 365 days, or one year. Forces at work in the solar system keep the Earth, as well as the other planets, locked into predictable orbits around the sun.\”");
+var item4 = new Item("All radioactivity is man-made.", false, "<a href=\"https://www.planete-energies.com/en/medias/close/radioactivity-natural-or-man-made-phenomenon\">Planete-Energies</a> explains that, \“The decay of unstable atoms releases radiation, a phenomenon called radioactivity. As unstable atoms exist in all matter, we are surrounded by natural radiation. Radiation can also come from man-made sources, through military, medical or industrial applications.\”");
+var item5 = new Item("Electrons are smaller than atoms.", true, "<a href=\"http://www.chem4kids.com/files/atom_structure.html\">Chem4Kids</a> states that, \“Electrons are the smallest of the three particles that make up atoms. Electrons are found in shells or orbitals that surround the nucleus of an atom. Protons and neutrons are found in the nucleus. They group together in the center of the atom.\”");
+var item6 = new Item("Lasers work by focusing sound waves.", false, "As the name—Light Amplification by Stimulated Emission of Radiation—suggests, lasers focus light waves.");
+var item7 = new Item("The universe began with a huge explosion.", true, "According to <a href=\"https://www.livescience.com/32278-was-the-big-bang-really-an-explosion.html\">Live Science</a>: \“The Big Bang is science’s best explanation for how the universe began. According to the theory, the universe started out much hotter and much denser than it is today, and expanded and cooled over time.\”");
+var item8 = new Item("It is the father's gene that decides whether the baby is a boy or girl.", true, "<a href=\"https://genetics.thetech.org/ask-a-geneticist/which-parent-decides-whether-baby-will-be-boy-or-girl\">The Tech</a> explains that, \“What we can say is that dad's sperm determines whether a baby will be a boy or a girl. About half of his sperm will make a boy and half a girl.\”");
+var item9 = new Item("Antibiotics kill viruses as well as bacteria.", false, "\“Antibiotics cannot kill viruses because bacteria and viruses have different mechanisms and machinery to survive and replicate,\” says the website <a href=\"https://www.drugs.com/article/antibiotics-and-viruses.html\">Drugs.com</a>");
+var item10 = new Item("Human beings, as we know them today, developed from earlier species of animals.", true, "The theory of evolution is the best known explanation today for the development of modern humans.");
 
 var quiz = [item1, item2, item3, item4, item5, item6, item7, item8, item9, item10];
 
-// Populates index.html with the introduction
+// Initiates index.html with the introduction
 function intro() {
 
     setTimeout(function() {
@@ -41,7 +41,7 @@ function intro() {
     }, 2000);
 
     setTimeout(function() {
-        var line1 = "According to <a href=\"https://www.businessinsider.com/science-questions-quiz-public-knowledge-education-2018-5\">Business Insider</a>, the <strong>National Science Foundation</strong> polls Americans every two years to see how the U.S. is doing in science and engineering.";
+        var line1 = "The <strong><a href=\"https://www.nsf.gov/statistics/2018/nsb20181/report/sections/science-and-technology-public-attitudes-and-understanding/public-knowledge-about-s-t#understanding-scientific-terms-and-concepts\">National Science Foundation</a></strong> polls Americans every two years to see how the U.S. is doing in science and engineering.";
         var d = $("<div>");
         d.addClass("uk-width-1-3@s uk-align-center uk-animation-slide-right");
         d.attr("id", "intro");
@@ -78,10 +78,6 @@ function intro() {
 
 intro();
 
-$(this).on("click", "#startbutton", function() {
-    startQuiz();
-});
-
 function startQuiz() {
     correctCounter = 0;
     incorrectCounter = 0;
@@ -93,7 +89,11 @@ function startQuiz() {
     nextQuestion();
 }
 
-// Populates index.html with the appropriate elements depending on page's purpose
+$(this).on("click", "#startbutton", function() {
+    startQuiz();
+});
+
+// Generates the appropriate elements on the index.html page depending on page's purpose
 function createQuizLayout(layout) {
     switch (layout) {
         case "question":
@@ -226,15 +226,10 @@ function showStats() {
     d.html("Your percentage correct is <strong>" + percent + "%</strong>, which is " + compare + " the U.S. average of 60%.");
     var btn = $("<button>").text("Take quiz again");
     btn.addClass("uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom");
-    btn.attr("id", "startoverbutton");
+    btn.attr("id", "startbutton");
     var p4 = $("<p>").attr("id", "citation");
-    // Contact Business Insider for permission to include this project in my portfolio?
-    p4.html("This quiz was created for educational purposes. The questions and answers have been reproduced from the article by <a href=\"https://www.businessinsider.com/science-questions-quiz-public-knowledge-education-2018-5\">Mosher and Cheng (2018, May 27), \"Each year the government asks 10 simple questions to test the public's knowledge of science. Can you correctly answer them all?\"</a>");
+    p4.html("This quiz was inspired by the article by <a href=\"https://www.businessinsider.com/science-questions-quiz-public-knowledge-education-2018-5\">Mosher and Cheng (2018, May 27), \"Each year the government asks 10 simple questions to test the public's knowledge of science. Can you correctly answer them all?\"</a>");
     $("#stats").append(p1, p2, p3, d, btn, "<hr>", p4);
 }
-
-$(this).on("click", "#startoverbutton", function() {
-    startQuiz();
-});
 
 });
